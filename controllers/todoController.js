@@ -71,3 +71,15 @@ exports.getUserTodoDetails = async (request, response, next) => {
         }
     } catch (error) { next(error); }
 }
+
+exports.getAllUserTodos = async (request, response, next) => {
+    try {
+        const userTodo = await Todo.findOne({ user: request.params.user_id });
+        if (userTodo) {
+            response.status(200).json({ message: 'Todos retrieved successfully', data: userTodo.todoItems });
+        }
+        else {
+            throw Object.assign(new Error('User Todos not found'), { status: 404 });
+        }
+    } catch (error) { next(error); }
+}

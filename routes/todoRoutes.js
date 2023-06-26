@@ -9,6 +9,6 @@ router.route('/todo/:user_id')
 router.route('/todo/:user_id/:todo_id')
     .patch(todoController.updateTodo)
     .delete(todoController.deleteTodo)
-
+    .get(todoController.getUserTodoDetails);
 
 module.exports = router;
