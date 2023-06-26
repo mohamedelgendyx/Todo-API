@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "24e0084a-41f2-4eb8-bc6e-ee8d999da432",
+		"name": "Todo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add new todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"todoDetails\":\"third\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/todo/:user_id",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"todo",
+						":user_id"
+					],
+					"variable": [
+						{
+							"key": "user_id",
+							"value": "6499f36d4b2ab1d0c5ffbc73"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"todoDetails\":\"updated one\",\r\n    \"completed\":\"false\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/todo/:user_id/:todo_id",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"todo",
+						":user_id",
+						":todo_id"
+					],
+					"variable": [
+						{
+							"key": "user_id",
+							"value": "6499f36d4b2ab1d0c5ffbc73"
+						},
+						{
+							"key": "todo_id",
+							"value": "649a0738489e436b5c55eb40"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update todo",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"todoDetails\":\"updated one\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/todo/:user_id/:todo_id",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"todo",
+						":user_id",
+						":todo_id"
+					],
+					"variable": [
+						{
+							"key": "user_id",
+							"value": "6499f36d4b2ab1d0c5ffbc73"
+						},
+						{
+							"key": "todo_id",
+							"value": "6499ff1828780f257a106a3f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get a specific todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/todo/:user_id/:todo_id",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"todo",
+						":user_id",
+						":todo_id"
+					],
+					"variable": [
+						{
+							"key": "user_id",
+							"value": "6499f36d4b2ab1d0c5ffbc73"
+						},
+						{
+							"key": "todo_id",
+							"value": "6499ff2a797ab13d05929351"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/todo/:user_id",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"todo",
+						":user_id"
+					],
+					"variable": [
+						{
+							"key": "user_id",
+							"value": "6499f36d4b2ab1d0c5ffbc73"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
