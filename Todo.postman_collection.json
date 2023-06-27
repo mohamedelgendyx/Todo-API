@@ -8,6 +8,16 @@
 		{
 			"name": "add new todo",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDlhMTZmNjJlODFkMGViYzk4NjEzZmEiLCJpYXQiOjE2ODc4MjAyMDgsImV4cCI6MTY4NzkwNjYwOH0.saNEuL1lzcE21D_gx9ZFpOvpJJmWlMwG8p_-25xceSo",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -32,7 +42,7 @@
 					"variable": [
 						{
 							"key": "user_id",
-							"value": "6499f36d4b2ab1d0c5ffbc73"
+							"value": "649a16f62e81d0ebc98613fa"
 						}
 					]
 				}
@@ -42,6 +52,16 @@
 		{
 			"name": "delete todo",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDlhMTZmNjJlODFkMGViYzk4NjEzZmEiLCJpYXQiOjE2ODc4MjAyMDgsImV4cCI6MTY4NzkwNjYwOH0.saNEuL1lzcE21D_gx9ZFpOvpJJmWlMwG8p_-25xceSo",
+							"type": "string"
+						}
+					]
+				},
 				"method": "DELETE",
 				"header": [],
 				"body": {
@@ -67,11 +87,11 @@
 					"variable": [
 						{
 							"key": "user_id",
-							"value": "6499f36d4b2ab1d0c5ffbc73"
+							"value": "649a16f62e81d0ebc98613fa"
 						},
 						{
 							"key": "todo_id",
-							"value": "649a0738489e436b5c55eb40"
+							"value": "649a18e8ee7dd6524b25e92c"
 						}
 					]
 				}
@@ -81,11 +101,21 @@
 		{
 			"name": "update todo",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDlhMTZmNjJlODFkMGViYzk4NjEzZmEiLCJpYXQiOjE2ODc4MjAyMDgsImV4cCI6MTY4NzkwNjYwOH0.saNEuL1lzcE21D_gx9ZFpOvpJJmWlMwG8p_-25xceSo",
+							"type": "string"
+						}
+					]
+				},
 				"method": "PATCH",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"todoDetails\":\"updated one\"\r\n}",
+					"raw": "{\r\n    \"todoDetails\":\"updated this one\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -106,11 +136,11 @@
 					"variable": [
 						{
 							"key": "user_id",
-							"value": "6499f36d4b2ab1d0c5ffbc73"
+							"value": "649a16f62e81d0ebc98613fa"
 						},
 						{
 							"key": "todo_id",
-							"value": "6499ff1828780f257a106a3f"
+							"value": "649a18e3ee7dd6524b25e927"
 						}
 					]
 				}
@@ -120,6 +150,16 @@
 		{
 			"name": "get a specific todo",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDlhMTZmNjJlODFkMGViYzk4NjEzZmEiLCJpYXQiOjE2ODc4MjAyMDgsImV4cCI6MTY4NzkwNjYwOH0.saNEuL1lzcE21D_gx9ZFpOvpJJmWlMwG8p_-25xceSo",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -136,11 +176,11 @@
 					"variable": [
 						{
 							"key": "user_id",
-							"value": "6499f36d4b2ab1d0c5ffbc73"
+							"value": "649a16f62e81d0ebc98613fa"
 						},
 						{
 							"key": "todo_id",
-							"value": "6499ff2a797ab13d05929351"
+							"value": "649a18e3ee7dd6524b25e927"
 						}
 					]
 				}
@@ -150,6 +190,16 @@
 		{
 			"name": "get all todos",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDlhMTZmNjJlODFkMGViYzk4NjEzZmEiLCJpYXQiOjE2ODc4MjAyMDgsImV4cCI6MTY4NzkwNjYwOH0.saNEuL1lzcE21D_gx9ZFpOvpJJmWlMwG8p_-25xceSo",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -165,8 +215,62 @@
 					"variable": [
 						{
 							"key": "user_id",
-							"value": "6499f36d4b2ab1d0c5ffbc73"
+							"value": "649a16f62e81d0ebc98613fa"
 						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mohamedelgendyx@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullname\": \"user3\",\r\n    \"email\": \"user3@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"signup"
 					]
 				}
 			},
